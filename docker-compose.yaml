@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ollama:
+    container_name: ollama-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: always
+    tty: true
+    restart: always
+    ports:
+      - 8200:80
+    volumes:
+      - ./ollama:/root/.ollama
+    environment:
+      - CADDY_USERNAME=${CADDY_USERNAME}
+      - CADDY_PASSWORD=${CADDY_PASSWORD}
