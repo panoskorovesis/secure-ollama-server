@@ -1,4 +1,4 @@
-# secure-ollama-server
+# Secure Ollama Server
 
 This repo contains a simple autheticated version of the ollama server.
 
