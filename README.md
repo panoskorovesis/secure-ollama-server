@@ -22,7 +22,7 @@ docker compose -f docker-compose.yaml -f docker-compose.gpu.yaml up -d
 
 **Option 2: Cpu only**
 ```sh
-docker compose -f docker-compose.yaml -f docker-compose.gpu.yaml up -d
+docker compose -f docker-compose.yaml up -d
 ```
 
 ### Using the password protected ollama server
